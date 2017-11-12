@@ -12,7 +12,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 125%;
 }
 
 table {
@@ -108,7 +108,7 @@ address {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 
 .container {
   width: 100%;
@@ -130,7 +130,8 @@ address {
 }
 
 .areal{
-  height: 400px; 
+
+  height: 480px; 
 }
 
 .partners {
