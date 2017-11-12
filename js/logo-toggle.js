@@ -1,8 +1,8 @@
 var images = $(".logo");
 
-$(images[0]).css("display", "block");
-$(images[1]).css("display", "block");
-$(images[2]).css("display", "block");
+$(images[0]).css("display", "inline");
+$(images[1]).css("display", "inline");
+$(images[2]).css("display", "inline");
 
 function toggleImgVisibility() {
 
