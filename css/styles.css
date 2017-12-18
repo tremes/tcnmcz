@@ -32,7 +32,7 @@ td, th {
  margin: auto;
  height:100%;
  padding: 0;
-  font-size: 1.1em;
+ font-size: 1.1em;
 }
 
 .container .jumbotron {
@@ -44,6 +44,28 @@ td, th {
   border-radius: 0px;
 }
 
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-inverse {
+  background-color: #b16545;
+  opacity: 0.7;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: black;
+  font-weight: 600;
+  font-size: 110%;
+}
+
+.navbar-collapse {
+  /*padding-left: 0;*/
+}
+
+/*
 .nav {
   background-color: #b16545;
   opacity: 0.7;
@@ -52,103 +74,143 @@ td, th {
 .nav-tabs {
   font-weight: 600;
   font-size: 120%;
-}
+  }*/
 
-.row {
-  margin: 0;
-}
+  .row {
+    margin: 0;
+  }
 
-.nav-link {
-  color: black;
-}
+  .nav-link {
+    color: black;
+  }
 
-.active {
-  color: black;
-  background-color: #fde8df;
-}
+  .active {
+    color: black;
+    background-color: #fde8df;
+  }
 
-.nav>li>a:hover {
-  color: black;
-  background-color: #fde8df;
-  background: #fde8df;
-}
-
-
-#tcnm-logo { 
-  margin: auto;
-  display: block;
-  height: auto;
-  width: 60%;
-  /*border: 4px solid RED;*/
-}
-
-address {
-  font-style: normal;
-  line-height: 1.8em;
-}
+  .navbar-inverse .navbar-nav>li>a:hover {
+    color: black;
+    background-color: #fde8df;
+    background: #fde8df;
+  }
 
 
-.areal {
-  background: #fde8df;
-  height: 880px;
-  line-height: 1.8em;
-  padding-top: 10px;
-}
+  #tcnm-logo { 
+    margin: auto;
+    display: block;
+    height: auto;
+    width: 60%;
+    /*border: 4px solid RED;*/
+  }
 
-.partners {
-  border-left: .5px solid black;
-  background: #fde8df;
-  height: 880px;
-}
+  address {
+    font-style: normal;
+    line-height: 1.8em;
+  }
 
-.logo {
-  width:90%;
-  margin: 30px 4%;
-  #border: 4px solid BLUE;
-  display: none;
-}
 
-.map {
-  width:100%;
-  height:380px;
-}
+  .areal {
+    background: #fde8df;
+    height: 880px;
+    line-height: 1.8em;
+    padding-top: 10px;
+  }
 
-@media only screen and (max-width: 992px) {
+  .partners {
+    border-left: .5px solid black;
+    background: #fde8df;
+    height: 880px;
+  }
 
-.container {
-  width: 100%;
-  height:100%;
-  margin-left: 0;
-  /*min-width: 700px;*/
- }
+  .logo {
+    width:90%;
+    margin: 30px 4%;
+    #border: 4px solid BLUE;
+    display: none;
+  }
 
- #tcnm-logo { 
-  margin: auto;
-  display: block;
-  height: auto;
-  width: 75%;
-}
+  .map {
+    width:100%;
+    height:380px;
+  }
 
-.nav-tabs {
+  @media (max-width: 992px) {
+    .navbar-header {
+      float: none;
+    }
+    .navbar-left,.navbar-right {
+      float: none !important;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-collapse {
+      /*border-top: 1px solid transparent;*/
+      height: 100px;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+      float: none;
+    }
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block!important;
+      /*width: 20%;*/
+      /*float: right;*/
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+
+    .container {
+      width: 100%;
+      height:100%;
+      margin-left: 0;
+      /*min-width: 700px;*/
+    }
+
+    #tcnm-logo { 
+      margin: auto;
+      display: block;
+      height: auto;
+      width: 75%;
+    }
+
+/*.nav-tabs {
   font-weight: 600;
   font-size: 100%;
-}
+  }*/
 
-.areal{
+  .areal{
 
-  height: 880px; 
-}
+    height: 880px; 
+  }
 
-.partners {
-  text-align: center;
-  height: auto;
-  border: none;
-  padding: 5px 0 0 10px;
-}
+  .partners {
+    text-align: center;
+    height: auto;
+    border: none;
+    padding: 5px 0 0 10px;
+  }
 
-.logo {
-  width: 50%;
-}
+  .logo {
+    width: 50%;
+  }
 
 
 }
