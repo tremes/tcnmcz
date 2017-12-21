@@ -27,17 +27,9 @@ td, th {
   margin: 5% 0 5% 0;
 }
 
-.container {
- width: 52%;
- margin: auto;
- height:100%;
- padding: 0;
- font-size: 1.1em;
-}
-
 .container .jumbotron {
   font-family: inherit;
-  background-image: url("../img/header_bg.png");
+  background-image: url("../img/header_bg1.png");
   opacity: 0.8;
   margin-bottom: 0;
   border: none;
@@ -48,6 +40,7 @@ td, th {
   margin-bottom: 0;
   border: none;
   border-radius: 0;
+  min-height: 45px;
 }
 
 .navbar-inverse {
@@ -56,25 +49,21 @@ td, th {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: black;
-  font-weight: 600;
-  font-size: 110%;
+ color: black;
+ font-weight: 600;
+ font-size: 110%;
 }
 
-.navbar-collapse {
-  /*padding-left: 0;*/
+.navbar-inverse .navbar-nav>li>a:hover {
+ color: black;
+ background-color: #fde8df;
+ background: #fde8df;
 }
 
-/*
-.nav {
+.navbar-toggle {
+  color: #b16545;
   background-color: #b16545;
-  opacity: 0.7;
 }
-
-.nav-tabs {
-  font-weight: 600;
-  font-size: 120%;
-  }*/
 
   .row {
     margin: 0;
@@ -89,19 +78,11 @@ td, th {
     background-color: #fde8df;
   }
 
-  .navbar-inverse .navbar-nav>li>a:hover {
-    color: black;
-    background-color: #fde8df;
-    background: #fde8df;
-  }
-
-
   #tcnm-logo { 
     margin: auto;
     display: block;
     height: auto;
     width: 60%;
-    /*border: 4px solid RED;*/
   }
 
   address {
@@ -135,7 +116,7 @@ td, th {
     height:380px;
   }
 
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
     .navbar-header {
       float: none;
     }
@@ -146,12 +127,13 @@ td, th {
       display: block;
     }
     .navbar-collapse {
-      /*border-top: 1px solid transparent;*/
-      height: 100px;
+      height: auto;
+      border: none;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
     .navbar-fixed-top {
       top: 0;
+      border: none;
       border-width: 0 0 1px;
     }
     .navbar-collapse.collapse {
@@ -168,10 +150,10 @@ td, th {
       padding-top: 10px;
       padding-bottom: 10px;
     }
-    .collapse.in{
+    .collapse.in {
+      min-width: auto;
+      overflow-y: hidden;
       display:block!important;
-      /*width: 20%;*/
-      /*float: right;*/
     }
   }
 
@@ -180,24 +162,21 @@ td, th {
     .container {
       width: 100%;
       height:100%;
-      margin-left: 0;
-      /*min-width: 700px;*/
     }
 
-    #tcnm-logo { 
-      margin: auto;
-      display: block;
-      height: auto;
-      width: 75%;
-    }
+    .navbar-inverse .navbar-nav>li>a:hover {
+     color: black;
+     background-color: #b16545;
+   }
 
-/*.nav-tabs {
-  font-weight: 600;
-  font-size: 100%;
-  }*/
+   #tcnm-logo { 
+     margin: auto;
+     display: block;
+     height: auto;
+     width: 75%;
+   }
 
-  .areal{
-
+   .areal{
     height: 880px; 
   }
 
@@ -210,6 +189,11 @@ td, th {
 
   .logo {
     width: 50%;
+  }
+
+   .active {
+    color: black;
+    background-color: #b16545;
   }
 
 
