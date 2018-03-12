@@ -1,3 +1,6 @@
+
+// GET PARTNERS LOGOS AND CHANGE DISPLAY EVERY 4 S
+
 var images = $(".logo");
 
 $(images[0]).css("display", "inline");
@@ -16,3 +19,14 @@ function toggleImgVisibility() {
 
 
 setInterval(toggleImgVisibility, 4000);
+
+// INITIALIZE BLUEIMP GALLERY
+
+document.getElementById('links').onclick = function (event) {
+	event = event || window.event;
+	var target = event.target || event.srcElement,
+		link = target.src ? target.parentNode : target,
+		options = {index: link, event: event},
+		links = this.getElementsByTagName('a');
+	blueimp.Gallery(links, options);
+};
