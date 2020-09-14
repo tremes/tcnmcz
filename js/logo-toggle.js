@@ -13,4 +13,4 @@ function toggleImgVisibility() {
 	});
 }
 
-//setInterval(toggleImgVisibility, 4000);
+setInterval(toggleImgVisibility, 4000);
